@@ -1,0 +1,114 @@
+.calendar-grid {
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.time-header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #f8f8f8;
+  z-index: 1;
+}
+
+.time-cell {
+  width: 60px;
+  text-align: center;
+  padding: 4px;
+  border-left: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.day-label {
+  width: 100px;
+  padding: 4px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  background: #fafafa;
+}
+
+.calendar-row {
+  display: flex;
+  border-top: 1px solid #eee;
+  align-items: center;
+  position: relative;
+}
+
+.day-row {
+  position: relative;
+  height: 40px;
+  width: 1440px;
+  border-left: 1px solid #ccc;
+}
+
+
+.shift-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+.icons {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.shift-box:hover .icons {
+  opacity: 1;
+}
+
+.edit-icon, .delete-icon {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 4px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.calendar-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.calendar-select:focus {
+  border-color: #4a90e2;
+}
+
+.add-staff-button {
+  display: flex;
+  align-items: center;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-staff-button:hover {
+  background-color: #357ac9;
+}
